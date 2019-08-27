@@ -31,16 +31,21 @@ const InputWithButton = props => {
   return (
     <View style={containerStyle}>
       {baseCurrency && (
-        <TouchableOpacity style={styles.buttonContainer} onPress={onBasePress}>
-          <Text style={styles.buttontext}>{baseCurrency}</Text>
+        <TouchableOpacity
+          testID="baseSelect"
+          style={styles.buttonContainer}
+          onPress={onBasePress}
+        >
+          <Text testID="baseSelectText" tyle={styles.buttontext}>{baseCurrency}</Text>
         </TouchableOpacity>
       )}
       {targetCurrency && (
         <TouchableOpacity
           style={styles.buttonContainer}
           onPress={onTargetPress}
+          testID="targetSelect"
         >
-          <Text style={styles.buttontext}>{targetCurrency}</Text>
+          <Text testID="targetSelectText" style={styles.buttontext}>{targetCurrency}</Text>
         </TouchableOpacity>
       )}
       <View style={styles.border} />
@@ -54,6 +59,7 @@ const InputWithButton = props => {
         editable={editable}
         value={inputValue}
         {...props}
+        testID={`${baseCurrency ? 'base': 'target'}Value`}
       />
     </View>
   );

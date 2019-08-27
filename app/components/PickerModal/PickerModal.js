@@ -10,7 +10,7 @@ const PickerModal = props => {
   const { pickerValues, selectCurrency, currencyAttribute, which } = props;
 
   return (
-    <View style={styles.pickerContainer}>
+    <View testID="pickerModal" style={styles.pickerContainer}>
       <View style={styles.pickerHolder}>
         <Picker
           selectedValue={currencyAttribute[which]}

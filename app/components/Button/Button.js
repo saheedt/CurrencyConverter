@@ -8,7 +8,10 @@ const Button = props => {
   const { onPress } = props;
   return (
     <View style={Styles.buttonContainer}>
-      <TouchableOpacity style={Styles.button} onPress={onPress}>
+      <TouchableOpacity
+        testID="convertButton"
+        style={Styles.button}
+        onPress={onPress}>
         <Text style={Styles.buttonText}>CONVERT</Text>
       </TouchableOpacity>
     </View>

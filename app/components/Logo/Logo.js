@@ -9,7 +9,11 @@ const Logo = () => (
       style={Styles.containerImage}
       resizeMode="contain"
       source={require('./images/background.png')}>
-      <Image source={require('./images/logo.png')} style={Styles.logo} resizeMode="contain" />
+      <Image
+        source={require('./images/logo.png')}
+        style={Styles.logo}
+        resizeMode="contain"
+      />
     </ImageBackground>
     <Text style={Styles.text}>Currency Converter</Text>
   </View>

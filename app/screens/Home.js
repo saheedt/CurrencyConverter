@@ -149,7 +149,6 @@ const Home = () => {
                 )
               }
             />
-            {/* {modal.show && ( */}
             <Overlay
               visible={modal.show}
               onClose={() => {
@@ -170,7 +169,6 @@ const Home = () => {
                 currencyAttribute={currencyAttr}
               />
             </Overlay>
-            {/* )} */}
           </Fragment>
         </ScrollView>
       </KeyboardAvoidingView>

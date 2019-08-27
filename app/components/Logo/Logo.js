@@ -15,7 +15,7 @@ const Logo = () => (
         resizeMode="contain"
       />
     </ImageBackground>
-    <Text style={Styles.text}>Currency Converter</Text>
+    <Text testID="bg-text" style={Styles.text}>Currency Converter</Text>
   </View>
 );
 
